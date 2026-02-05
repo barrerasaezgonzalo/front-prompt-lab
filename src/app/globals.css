@@ -18,3 +18,37 @@
     background: #52525b; /* zinc-600 */
   }
 }
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.animate-toast-in {
+  animation: toast-in 0.2s forwards;
+}
+
+.animate-toast-out {
+  animation: toast-out 0.2s forwards;
+}
+
+* {
+  /* border:1px solid red; */
+}
